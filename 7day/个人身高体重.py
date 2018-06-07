@@ -1,0 +1,6 @@
+name = input("请输入姓名")
+gender = input("请输入性别")
+phone = input("请输入电话")
+height = input("请输入身高")
+weight = input("请输入体重")
+#print("name%s\n"%name,"gender%s\n"%gender,"phone%s\n"%phone,"height%s\n"%height,"weight%s\n"%weight)
