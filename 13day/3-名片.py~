@@ -1,0 +1,53 @@
+list = []
+print("名片管理系统".center(50,"*"))
+while True:
+	print("1:添加名片".center(50,"*"))
+	print("2:查找名片".center(50,"*"))
+	print("3:修改名片".center(50,"*"))
+	print("4:删除名片".center(50,"*"))
+	print("5:退出".center(50,"*"))
+	num = int(input("请选择功能"))
+	if num == 1:
+		good = {}
+		name = input("请输入要添加的名字")
+		z = input("请输入要添加的职位")
+		good["name"] = name
+		good["z"] = z
+		list.append(good)
+		print(list)
+	elif num == 2:
+		name = input("请输入你要查找的名字")
+		for n in list:
+			if name == n:
+				print(name,n)
+				break
+	elif num ==3:
+		name = input("请输入你要修改的名字")
+		for n in list:
+			if name == n[0]:
+				print("1:修改名字")
+				print("2:修改职位")
+				print("3:修改名字和职位")
+				num = int(input("请选择功能"))
+				if num == 1:
+					name = input("请输入新名字")
+					n[0] = name
+				elif num == 2:
+					ceo = input("请输入新职位")
+					n[1] = ceo
+				elif num == 3:
+					name = input("请输入新名字")
+					ceo = input("请输入新职位")
+					n[0] = name
+					n[1] = ceo
+				break
+		print(list)
+	elif num == 4:
+		name = input("请输入你要删除的名字")
+		for position,l in enumerate(list):
+			if name == l[0]:
+				list.pop(position)
+				print(list)
+				break
+	elif num == 5:
+		break

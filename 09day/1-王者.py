@@ -1,5 +1,5 @@
 i = 0
-while i <= 3:
+while i < 3:
 	a = input("请输入账号")
 	b = input("请输入密码")
 	if a == "fs" and b == "123456":
@@ -13,5 +13,8 @@ while i <= 3:
 		elif e == "2":
 			print("王昭君")
 	else:
-		print("登录失败")
+		if i!=2:
+			print("登录失败")
+		else:
+			print("账号被冻结")
 	i+=1

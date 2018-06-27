@@ -1,0 +1,10 @@
+account="1114045501"
+passwd='123'
+print('account=',account)
+print('passwd',passwd)
+'''
+account="1114045501"
+passwd='123'
+print('account=',account)
+print('passwd',passwd)
+'''
